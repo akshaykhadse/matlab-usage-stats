@@ -1,5 +1,5 @@
 def popluate_ldap(path):
-    """CSV"""
+"""CSV"""
     ldap_dict = {}
     with open(path) as ldap_ip:
         for line in ldap_ip:

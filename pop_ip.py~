@@ -1,5 +1,4 @@
 def populate_ip(path):
-    """tcpdump log"""
     ip_time_table = {}
     with open(path) as tcpdump:
         for line in tcpdump:
