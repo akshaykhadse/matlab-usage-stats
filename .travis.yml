@@ -7,7 +7,9 @@ install:
 - pip install -r requirements.txt
 
 script:
-- coverage run --source=reports,parser manage.py test reports parser
+- coverage run --rcfile=.coveragerc manage.py test parser reports
+- coverage report --rcfile=coverage.rc
 - flake8 .
 
-after_success: coveralls
+after_success:
+  - coveralls -c .coveragerc
