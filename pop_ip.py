@@ -1,10 +1,24 @@
 import datetime
 
+
 def time(x):
     return datetime.datetime.fromtimestamp(int(x)).strftime('%H:%M:%S')
 
-def populate_ip(path):
-    """tcpdump log"""
+
+def pop_ip(path):
+    """
+    Finds IP for given timestamps from port activity log (tcpdump).
+
+    Args:
+    -----
+    path: String
+        Path for the port activity log (tcpdump) file.
+
+    Returns:
+    -------
+    ip_time_table: Dict
+        Returns a dictionary with time as keys and ip as value.
+    """
     ip_time_table = {}
     with open(path) as tcpdump:
         for line in tcpdump:
