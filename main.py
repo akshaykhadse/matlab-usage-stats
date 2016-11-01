@@ -1,35 +1,57 @@
-from ldap_search import *
-from pop_ip import *
-from pop_ldap import *
+from ldap_search import ldap_search
+from pop_ip import pop_ip
+from pop_ldap import pop_ldap
 
-ip_time_table = populate_ip('data/src_ip_log1')
-ldap_dict = popluate_ldap('data/matlab_DB_active.csv')
-matlab_log = 'data/LM_TMW3.log'
 
-x = 0
-y = 0
-with open(matlab_log) as matlab:
-    for line in matlab:
-        x=x+1
-        if '(MLM)' in line:
-            data = line.rstrip().split(' ')
-            try:
+def process(active_csv, archive_csv, matlab_log, port_activity_log):
+    """
+    Processes Matlab debug log file line by line to produce a file output.txt.
+    Output has columns with timestamp, action, toolbox, ip, uid, rollnumber,
+    type and department.
+
+    Args:
+    -----
+    active_csv: String
+        Path to CSV file for active users.
+
+    archive_csv: String
+        Path to CSV file for previous users.
+
+    matlab_log: String
+        Path to matlab debug log file.
+
+    port_activity_log: String
+        Path to port activity log file.
+
+    Returns:
+    --------
+    None
+    """
+    ip_time_table = pop_ip(port_activity_log)
+    with open(matlab_log) as matlab:
+        for line in matlab:
+            if '(MLM)' in line.rstrip():
+                data = line.split(' ')
                 if data[2] in ['IN:', 'OUT:', 'DENIED:']:
-                    #print(data[0], data[1], data[2], data[3])
-                    ip = ip_time_table[data[0]]
-                    uid = ldap_dict[ip]
-                    details = get_ldap_details(uid)
+                    try:
+                        ip = ip_time_table[data[0]]
+                    except KeyError:
+                        ip = 'NA'
+                    uid = pop_ldap(ip, active_csv, archive_csv)
+                    details = ldap_search(uid)
+
                     with open('output.txt', 'a') as output:
-                        line = [data[0],data[2].replace(':', ''),
+                        line = [data[0], data[2].replace(':', ''),
                                 data[3].replace('"', ''), ip, uid]
                         for keys in details:
                             line.append(details[keys])
                         output.write(' '.join(line) + '\n')
-                        print(' '.join(line))
-            except KeyError:
-                try:
-                    ip = ip_time_table[data[0]]
-                    print(data[0],data[2].replace(':', ''),data[3].replace('"', ''), ip)
-                except KeyError:
-                    y = y+1
-                    print(x, y)
+    return None
+
+
+if __name__ == '__main__':
+    active_csv = 'data/matlab_DB_active.csv'
+    archive_csv = 'data/matlab_DB_archive3.csv'
+    matlab_log = 'data/LM_TMW3.log'
+    port_activity_log = 'data/src_ip_log1'
+    process(active_csv, archive_csv, matlab_log, port_activity_log)

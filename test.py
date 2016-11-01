@@ -2,6 +2,8 @@ from os import remove
 import unittest
 from pop_ip import pop_ip
 from pop_ldap import pop_ldap
+from main import process
+from unittest import mock
 
 
 class Test_pop_ip(unittest.TestCase):
@@ -50,6 +52,59 @@ class Test_pop_ldap(unittest.TestCase):
         uid = pop_ldap('10.107.63.197', 'temp_ldap_archive',
                        'temp_ldap_active')
         self.assertEqual(uid, 'NA')
+
+
+class Test_processing(unittest.TestCase):
+    def setUp(self):
+        with open('temp_LM_TMW', 'w') as temp:
+            temp.write('14:40:31 (MLM) OUT: "Distrib_Computing_Toolbox" \
+xxx@xxx\n')
+            temp.write('14:40:40 (MLM) OUT: "SimMechanics" xxx@xxx\n')
+            temp.write('14:40:49 (MLM) OUT: "Real-Time_Workshop" xxx@xxx\n')
+            temp.write('14:40:55 (MLM) OUT: "MBC_Toolbox" xxx@xxx')
+
+        with open('temp_ldap_active', 'w') as temp:
+            temp.write('"userid5","10.236.57.15","16-11-13 14:40:31",\
+"1479025748"\n')
+            temp.write('"userid6","10.251.233.144","16-11-13 14:40:41",\
+"1479026935"\n')
+            temp.write('"userid7","10.211.63.51","16-11-13 14:40:49",\
+"1479027091"\n')
+            temp.write('"userid8","10.177.5.173","16-11-13 14:40:55",\
+"1479025940"')
+
+        with open('temp_ldap_archive', 'w') as temp:
+            temp.write('"userid9","10.9.227.242","16-11-13 14:42:43",\
+"1479027417"","16-11-13 14:44:03", "1479031454"\n')
+            temp.write('"userid10","10.197.33.124","16-11-13 14:42:29",\
+"1479026654"","16-11-13 14:45:14", "1479030776"\n')
+            temp.write('"userid11","10.17.152.216","16-11-13 14:46:35",\
+"1479027284"","16-11-13 14:48:50", "1479029532"\n')
+            temp.write('"userid12","10.144.233.50","16-11-13 14:43:27",\
+"1479025833"","16-11-13 14:50:12", "1479031382"')
+
+        with open('temp_ip', 'w') as temp:
+            temp.write('14:40:31   10.236.57.15   27000\n')
+            temp.write('14:40:41   10.251.233.144   27000\n')
+            temp.write('14:40:49   10.211.63.52   27000\n')
+            temp.write('14:40:55   10.177.5.173   27000')
+
+    def tearDown(self):
+        remove('temp_LM_TMW')
+        remove('temp_ldap_active')
+        remove('temp_ldap_archive')
+        remove('temp_ip')
+
+    @mock.patch('main.ldap_search')
+    def test_processing(self, mock_search):
+        mock_search.return_value = {'employeenumber': 'NA',
+                                    'employeetype': 'NA',
+                                    'department': 'NA'}
+        process('temp_ldap_active', 'temp_ldap_archive', 'temp_LM_TMW',
+                'temp_ip')
+        expected = [mock.call(i) for i in ("userid5", "NA", "NA",
+                                           "userid8")]
+        mock_search.assert_has_calls(expected)
 
 
 if __name__ == '__main__':
