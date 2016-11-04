@@ -1,6 +1,6 @@
-from ldap_search import ldap_search
-from pop_ip import pop_ip
-from pop_ldap import pop_ldap
+from .ldap_search import ldap_search
+from .pop_ip import pop_ip
+from .pop_ldap import pop_ldap
 
 
 def process(active_csv, archive_csv, matlab_log, port_activity_log):

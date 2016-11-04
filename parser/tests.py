@@ -1,8 +1,8 @@
 from os import remove
 import unittest
-from pop_ip import pop_ip
-from pop_ldap import pop_ldap
-from main import process
+from .pop_ip import pop_ip
+from .pop_ldap import pop_ldap
+from .main import process
 from unittest import mock
 
 
@@ -95,7 +95,7 @@ xxx@xxx\n')
         remove('temp_ldap_archive')
         remove('temp_ip')
 
-    @mock.patch('main.ldap_search')
+    @mock.patch('parser.main.ldap_search')
     def test_processing(self, mock_search):
         mock_search.return_value = {'employeenumber': 'NA',
                                     'employeetype': 'NA',
