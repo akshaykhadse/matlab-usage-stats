@@ -1,0 +1,24 @@
+<h1>Matlab Usage Report</h1>
+<table border=1>
+    <tr>
+        <th>Out Time</th>
+        <th>Package</th>
+        <th>User</th>
+        <th>Roll No</th>
+        <th>Department</th>
+        <th>Type</th>
+        <th>In Time</th>
+    </tr>
+
+{% for entry in entry_list %}
+    <tr>
+        <td>{{ entry.out_time }}</td>
+        <td>{{ entry.package }}</td>
+        <td>{{ entry.uid }}</td>
+        <td>{{ entry.emp_number }}</td>
+        <td>{{ entry.department }}</td>
+        <td>{{ entry.emp_type }}</td>
+        <td>{{ entry.in_time }}</td>
+    </tr>
+{% endfor %}
+</table>
