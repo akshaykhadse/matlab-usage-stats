@@ -52,3 +52,41 @@ class Test_reports_report_view(TestCase):
         self.assertIn('testuid1', str(response.content))
         self.assertIn('some matlab package', str(response.content))
         self.assertIn('DEPT', str(response.content))
+
+
+class Test_reports_graph_view(TestCase):
+    def setUp(self):
+        entry = LogEntry(uid='testuid1', package='matlab package1',
+                         out_time='22:22:22', emp_number='123456789',
+                         department='DEPT1', emp_type='xx', in_time='23:23:23')
+        entry.save()
+        entry = LogEntry(uid='testuid2', package='matlab package2',
+                         out_time='22:22:22', emp_number='123456781',
+                         department='DEPT2', emp_type='xx', in_time='23:23:23')
+        entry.save()
+        entry = LogEntry(uid='testuid3', package='matlab package2',
+                         out_time='22:22:22', emp_number='123456782',
+                         department='DEPT2', emp_type='xx', in_time='23:23:23')
+        entry.save()
+        entry = LogEntry(uid='testuid4', package='matlab package3',
+                         out_time='22:22:22', emp_number='123456783',
+                         department='DEPT3', emp_type='xx', in_time='23:23:23')
+        entry.save()
+
+    def tearDown(self):
+        LogEntry.objects.all().delete()
+
+    def test_report_view_status(self):
+        c = Client()
+        response = c.get('/reports/graphs')
+        self.assertEqual(response.status_code, 200)
+
+    def test_report_view_content(self):
+        c = Client()
+        response = c.get('/reports/graphs')
+        self.assertIn('matlab package1', str(response.content))
+        self.assertIn('matlab package2', str(response.content))
+        self.assertIn('matlab package3', str(response.content))
+        self.assertIn('DEPT1', str(response.content))
+        self.assertIn('DEPT2', str(response.content))
+        self.assertIn('DEPT3', str(response.content))
