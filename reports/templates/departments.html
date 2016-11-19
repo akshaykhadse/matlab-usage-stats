@@ -1,0 +1,15 @@
+<h1>Sectionwise Usage</h1>
+
+<form action="/reports/departments/" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit" />
+</form>
+
+{% if department %}
+<h4>{{ department }} Department Usage</h4>
+{% endif %}
+
+{% if graph %}
+<div>{{ graph|safe }}</div>
+{% endif %}

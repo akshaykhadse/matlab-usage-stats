@@ -1,0 +1,17 @@
+<h1>Usage by Time</h1>
+
+<form action="/reports/time/" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit" />
+</form>
+
+{% if start_time and end_time %}
+<h4>From {{ start_time }} to {{ end_time }}</h4>
+{% endif %}
+
+{% if graph %}
+<div>{{ graph|safe }}</div>
+{% else %}
+<h5>No Activity</h5>
+{% endif %}
