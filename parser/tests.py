@@ -120,4 +120,3 @@ class Test_ldap_search(TestCase):
         expected = [mock.call('ldap.iitb.ac.in', auto_bind=True),
                     mock.call().search(basedn, query, attributes=attrs)]
         mock_connection.assert_has_calls(expected)
-

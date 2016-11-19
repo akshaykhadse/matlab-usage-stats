@@ -7,7 +7,7 @@ README = open(os.path.join(os.path.dirname(__file__), 'README.md')).read()
 # Allow setup.py to be run from any path
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
-if sys.version_info < (3,4):
+if sys.version_info < (3, 4):
     sys.exit("Project requires python 3.4 or above")
 
 with open('requirements.txt') as f:
