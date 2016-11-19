@@ -17,7 +17,7 @@ setup(
         name="Matlab Usage Stats",
         version="1.0",
         description="Django based Matlab Licence Usage statistics agregator",
-        long_description = README,
+        long_description=README,
         url="https://github.com/akshaykhadse/matlab-usage-stats",
         author="Akshay Khadse, Raghav Gupta",
         author_email="akshay621993@gmail.com, raghavgupta0110@gmail.com",
