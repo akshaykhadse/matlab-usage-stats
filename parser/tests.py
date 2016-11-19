@@ -1,12 +1,12 @@
 from os import remove
-import unittest
+from unittest import mock, TestCase
 from .pop_ip import pop_ip
 from .pop_ldap import pop_ldap
 from .main import process
-from unittest import mock
+from .ldap_search import ldap_search, Connection
 
 
-class Test_pop_ip(unittest.TestCase):
+class Test_pop_ip(TestCase):
     def setUp(self):
         with open('temp_ip', 'w') as temp:
             temp.write('22:18:29   10.107.66.226   27000\n')
@@ -25,7 +25,7 @@ class Test_pop_ip(unittest.TestCase):
         self.assertEqual(time_stamp_list, {'22:18:29', '20:17:57'})
 
 
-class Test_pop_ldap(unittest.TestCase):
+class Test_pop_ldap(TestCase):
     def setUp(self):
         with open('temp_ldap_archive', 'w') as temp:
             temp.write('"userid1","10.14.47.9","2016-08-09 11:00:44am","1470720\
@@ -54,14 +54,15 @@ class Test_pop_ldap(unittest.TestCase):
         self.assertEqual(uid, 'NA')
 
 
-class Test_processing(unittest.TestCase):
+class Test_processing(TestCase):
     def setUp(self):
         with open('temp_LM_TMW', 'w') as temp:
             temp.write('14:40:31 (MLM) OUT: "Distrib_Computing_Toolbox" \
 xxx@xxx\n')
             temp.write('14:40:40 (MLM) OUT: "SimMechanics" xxx@xxx\n')
             temp.write('14:40:49 (MLM) OUT: "Real-Time_Workshop" xxx@xxx\n')
-            temp.write('14:40:55 (MLM) OUT: "MBC_Toolbox" xxx@xxx')
+            temp.write('14:40:55 (MLM) DENIED: "MBC_Toolbox" xxx@xxx\n')
+            temp.write('14:53:10 (MLM) IN: "SimMechanics" xxx@xxx\n')
 
         with open('temp_ldap_active', 'w') as temp:
             temp.write('"userid5","10.236.57.15","16-11-13 14:40:31",\
@@ -88,6 +89,7 @@ xxx@xxx\n')
             temp.write('14:40:41   10.251.233.144   27000\n')
             temp.write('14:40:49   10.211.63.52   27000\n')
             temp.write('14:40:55   10.177.5.173   27000')
+            temp.write('14:53:10   10.251.233.144   27000\n')
 
     def tearDown(self):
         remove('temp_LM_TMW')
@@ -107,5 +109,11 @@ xxx@xxx\n')
         mock_search.assert_has_calls(expected)
 
 
-if __name__ == '__main__':
-    unittest.main()
+class Test_ldap_search(TestCase):
+    @mock.patch.object(Connection, 'search')
+    def test_ldap_search(self, mock_search):
+        basedn = 'ou=People,dc=iitb,dc=ac,dc=in'
+        attrs = ['employeenumber', 'employeetype']
+        query = '(uid=user2)'
+        ldap_search('user2')
+        mock_search.assert_called_once_with(basedn, query, attributes=attrs)
