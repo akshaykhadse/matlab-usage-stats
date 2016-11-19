@@ -3,7 +3,7 @@ from unittest import mock, TestCase
 from .pop_ip import pop_ip
 from .pop_ldap import pop_ldap
 from .main import process
-from .ldap_search import ldap_search, Connection
+from .ldap_search import ldap_search
 
 
 class Test_pop_ip(TestCase):
@@ -109,11 +109,15 @@ xxx@xxx\n')
         mock_search.assert_has_calls(expected)
 
 
+@mock.patch('parser.ldap_search.Connection')
 class Test_ldap_search(TestCase):
-    @mock.patch.object(Connection, 'search')
-    def test_ldap_search(self, mock_search):
+    def test_ldap_search(self, mock_connection):
+        mock_connection.search.entries.__len__.return_value = 0
         basedn = 'ou=People,dc=iitb,dc=ac,dc=in'
         attrs = ['employeenumber', 'employeetype']
         query = '(uid=user2)'
         ldap_search('user2')
-        mock_search.assert_called_once_with(basedn, query, attributes=attrs)
+        expected = [mock.call('ldap.iitb.ac.in', auto_bind=True),
+                    mock.call().search(basedn, query, attributes=attrs)]
+        mock_connection.assert_has_calls(expected)
+
