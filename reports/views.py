@@ -6,6 +6,21 @@ from .forms import DepartmentForm, TimeForm
 
 
 def plot_stacked_bar_chart(query_set):
+    """
+    Plots stacked bar chart for given QuerySet from model using plotly offline.
+
+    Args:
+    -----
+    query_set: QuerySet
+        QuerySet of objects from a model in database according to filter.
+        (eg. LogEntry.objects.all(), LogEntry.objects.filter(uid='some_user'))
+
+    Returns:
+    -------
+    graph: String
+        Returns string containing HTML div tag and javascript to generate
+        graph in browser in standalone fashion.
+    """
     dept_data = {}
     data = []
     for entry in query_set:
@@ -28,17 +43,46 @@ def plot_stacked_bar_chart(query_set):
 
 
 def report_view(request):
+    """
+    Function based view to generate list of all the instances of LogEntry
+    model from database and format in form of table.
+
+    Every row in this table represents activity of a user in form of
+    out_time, package, userid, department, employeetype and in_time.
+
+    This view is rendered on reports/templates/reports.html template and can
+    be accessed at /reports/list/
+    """
     entry_list = LogEntry.objects.all()
     return render(request, 'reports.html', context={'entry_list': entry_list})
 
 
 def graph_view(request):
+    """
+    Function based view to generate graph with each bar as package split
+    according to departments of intended users. Also, these bars include number
+    of denied requests.
+
+    This view is rendered on reports/templates/graphs.html template and can
+    be accessed at /reports/graphs/
+    """
     entry_list = LogEntry.objects.all()
     graph = plot_stacked_bar_chart(entry_list)
     return render(request, 'graphs.html', {'graph': graph})
 
 
 def departments_view(request):
+    """
+    Function based view to generate graph of usage of packages of a particular
+    department according user supplied input. Each bar represents a package.
+
+    This view is responsible providing and processing DepartmentForm. Empty
+    instance of DepartmentForm is provided everytime this view is accessed.
+    If request.POST is not empty, graph is generated.
+
+    This view is rendered on reports/templates/departments.html template and
+    can be accessed at /reports/departments/
+    """
     if request.method == 'POST':
         dept = request.POST.get('department')
         form = DepartmentForm()
@@ -62,6 +106,18 @@ def departments_view(request):
 
 
 def time_view(request):
+    """
+    Function based view to generate graph of overall usage in a partciular
+    timeframe according user supplied input. Each bar represents a package
+    split according number of request from each departments in given timeframe.
+
+    This view is responsible providing and processing TimeForm. Empty instance
+    of TimeForm is provided everytime this view is accessed. If request.POST is
+    not empty, graph is generated.
+
+    This view is rendered on reports/templates/time.html template and can be
+    accessed at /reports/time/
+    """
     if request.method == 'POST':
         start_time = request.POST.get('start_time')
         end_time = request.POST.get('end_time')
