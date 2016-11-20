@@ -17,3 +17,14 @@ How to Use
   - `>>> run parser/main`
 
 - To start web interface `$ python3 manage.py runserver`
+
+Requirements
+============
+
+- flake8>=3.2.0
+- ldap3>=1.4.0
+- django>=1.10
+- coverage>=4.2
+- coveralls>=1.1
+- plotly>=1.12.9
+- sphinx>=1.4.8

@@ -46,3 +46,14 @@ How to Use
 Documentation
 =============
 Docs for this project can be found [here](https://matlab-usage-stats.readthedocs.io/)
+
+Requirements
+============
+
+- flake8>=3.2.0
+- ldap3>=1.4.0
+- django>=1.10
+- coverage>=4.2
+- coveralls>=1.1
+- plotly>=1.12.9
+- sphinx>=1.4.8
