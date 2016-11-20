@@ -80,12 +80,12 @@ class Test_reports_graph_view(TestCase):
     def tearDown(self):
         LogEntry.objects.all().delete()
 
-    def test_report_view_status(self):
+    def test_graph_view_status(self):
         c = Client()
         response = c.get('/reports/graphs/')
         self.assertEqual(response.status_code, 200)
 
-    def test_report_view_content(self):
+    def test_graph_view_content(self):
         c = Client()
         response = c.get('/reports/graphs/')
         self.assertIn('matlab package1', str(response.content))
