@@ -6,7 +6,7 @@ def ldap_search(uid):
     Gets LDAP details for given user id
 
     **Args:**
-    
+
     *uid: String*
         User ID to query ldap server.
 

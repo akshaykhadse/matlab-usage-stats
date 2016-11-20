@@ -11,7 +11,7 @@ def process(active_csv, archive_csv, matlab_log, port_activity_log):
     type and department.
 
     **Args:**
-    
+
     *active_csv: String*
         Path to CSV file for active users.
 
@@ -25,7 +25,7 @@ def process(active_csv, archive_csv, matlab_log, port_activity_log):
         Path to port activity log file.
 
     **Returns:**
-    
+
         None
     """
     ip_time_table = pop_ip(port_activity_log)

@@ -3,12 +3,12 @@ def pop_ip(path):
     Finds IP for given timestamps from port activity log (tcpdump).
 
     **Args:**
-    
+
     *path: String*
         Path for the port activity log (tcpdump) file.
 
     **Returns:**
-    
+
     *ip_time_table: Dict*
         Returns a dictionary with time as keys and ip as value.
     """

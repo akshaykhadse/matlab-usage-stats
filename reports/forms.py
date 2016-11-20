@@ -23,7 +23,7 @@ class TimeForm(forms.Form):
     Class Based Form for user inputs to select timeframe.
 
     **Attributes:**
-    
+
     *start_time: DateField*
         Text Field to get start time input from user for timewise graph.
         DateInput widget is used to generate the time only.
