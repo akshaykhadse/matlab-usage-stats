@@ -14,6 +14,6 @@ How to Use
 - To update entries use
 
   - `$ python3 manage.py shell`
-  - akshay `>>> run parser/main`
+  - `>>> run parser/main`
 
 - To start web interface `$ python3 manage.py runserver`
