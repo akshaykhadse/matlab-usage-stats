@@ -13,13 +13,11 @@ Contents:
 
    introduction
    howtouse
-   working
    modules/modules
-   
+
 Indices and tables
 ==================
 
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-
