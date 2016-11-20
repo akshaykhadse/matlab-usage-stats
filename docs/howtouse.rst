@@ -1,7 +1,7 @@
 How to Use
 ==========
 
-- Download or Clone the source code from `here<https://github.com/akshaykhadse/matlab-usage-stats/>`_
+- Download or Clone the source code from `here <https://github.com/akshaykhadse/matlab-usage-stats/>`_
 - `$ python3 setup.py install`
 - Copy the data files to `data/` folder. Data files should be as follows:
 
