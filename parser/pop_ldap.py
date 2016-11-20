@@ -5,20 +5,20 @@ def pop_ldap(ip, active_csv, archive_csv):
 
     First active file will be queried followed by archived file.
 
-    Args:
-    -----
-    ip: String
+    **Args:**
+
+    *ip: String*
         IP address of client.
 
-    active_csv: String
+    *active_csv: String*
         Path to CSV file for active users.
 
-    archive_csv: String
+    *archive_csv: String*
         Path to CSV file for previous users.
 
     Returns:
-    -------
-    uid: String
+
+    *uid: String*
         Latest UID from Database matching with the input IP Address
     """
     for file in [active_csv, archive_csv]:

@@ -5,14 +5,14 @@ def ldap_search(uid):
     """
     Gets LDAP details for given user id
 
-    Args:
-    -----
-    uid: String
+    **Args:**
+    
+    *uid: String*
         User ID to query ldap server.
 
-    Returns:
-    -------
-    details: Dict
+    **Returns:**
+
+    *details: Dict*
         Returns a dictionary with employeenumber, employeetype and department
         as keys and respective results as values.
     """

@@ -10,23 +10,23 @@ def process(active_csv, archive_csv, matlab_log, port_activity_log):
     Output has columns with timestamp, action, toolbox, ip, uid, rollnumber,
     type and department.
 
-    Args:
-    -----
-    active_csv: String
+    **Args:**
+    
+    *active_csv: String*
         Path to CSV file for active users.
 
-    archive_csv: String
+    *archive_csv: String*
         Path to CSV file for previous users.
 
-    matlab_log: String
+    *matlab_log: String*
         Path to matlab debug log file.
 
-    port_activity_log: String
+    *port_activity_log: String*
         Path to port activity log file.
 
-    Returns:
-    --------
-    None
+    **Returns:**
+    
+        None
     """
     ip_time_table = pop_ip(port_activity_log)
     with open(matlab_log) as matlab:

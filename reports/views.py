@@ -9,15 +9,15 @@ def plot_stacked_bar_chart(query_set):
     """
     Plots stacked bar chart for given QuerySet from model using plotly offline.
 
-    Args:
-    -----
-    query_set: QuerySet
+    **Args:**
+
+    *query_set: QuerySet*
         QuerySet of objects from a model in database according to filter.
         (eg. LogEntry.objects.all(), LogEntry.objects.filter(uid='some_user'))
 
-    Returns:
-    -------
-    graph: String
+    **Returns:**
+
+    *graph: String*
         Returns string containing HTML div tag and javascript to generate
         graph in browser in standalone fashion.
     """
