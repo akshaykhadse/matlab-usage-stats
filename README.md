@@ -26,8 +26,8 @@ There are four types of reports:
 How to Use
 ==========
 
-- Setup the project using **`$ python3 setup.py install`**
 - Download or Clone the source code from [here](https://github.com/akshaykhadse/matlab-usage-stats/)
+- Setup the project using **`$ python3 setup.py install`**
 - Copy the data files to **`data/`** folder. Data files should be as follows:
 
   - **`LM_TMW.log`** - MATLAB Debug Log file
