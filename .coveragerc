@@ -3,7 +3,7 @@ source = parser, reports
 omit =
     */__init__.py
     reports/apps.py
-    parser/management/
+    parser/management/*
 
 [report]
 exclude_lines =
