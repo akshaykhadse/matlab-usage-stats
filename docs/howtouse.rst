@@ -10,13 +10,9 @@ How to Use
   - `matlab_DB_active.csv` - CSV file genrated from database `active` table
   - `matlab_DB_archive.csv` - CSV file generated from database `archive` table
 
-- Create database by `$ python3 manage.py migrate`
-- To update entries use
-
-  - `$ python3 manage.py shell`
-  - `>>> run parser/main`
-
-- To start web interface `$ python3 manage.py runserver`
+  - Create database by `$ make migrate`
+  - To update entries use `$ make update` (This command need to be run whenever log files are changed)
+  - To start web interface `$ make run`
 
 Requirements
 ============

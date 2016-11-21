@@ -70,11 +70,3 @@ def process(active_csv, archive_csv, matlab_log, port_activity_log):
                         entry.in_time = data[0]
                         entry.save()
     return None
-
-
-if __name__ == '__main__':
-    active_csv = 'data/matlab_DB_active.csv'
-    archive_csv = 'data/matlab_DB_archive.csv'
-    matlab_log = 'data/LM_TMW.log'
-    port_activity_log = 'data/src_ip_log'
-    process(active_csv, archive_csv, matlab_log, port_activity_log)
