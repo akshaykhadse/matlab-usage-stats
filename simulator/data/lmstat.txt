@@ -1,0 +1,474 @@
+------------------------------------------------------------------
+lmstat - Copyright (c) 1989-2014 Flexera Software LLC. All Rights Reserved.
+Flexible License Manager status on Fri 10/7/2016 14:05
+
+License server status: 27000@matlab
+    License file(s) on matlab: /var/tmp/lm_TMW.dat:
+
+    matlab: license server UP (MASTER) v11.13.0
+
+Vendor daemon status (on matlab):
+
+       MLM: UP v11.13.0
+Feature usage info:
+
+Users of MATLAB:  (Total of 200 licenses issued;  Total of 106 licenses in use)
+
+  "MATLAB" v34, vendor: MLM, expiry: 01-jan-0000
+  floating license
+
+    lokpati npde-tca /dev/pts/3 (v34) (matlab/27000 7704), start Sat 9/24 0:45
+    bmlabadmin bmlabadmin /dev/pts/6 (v34) (matlab/27000 18411), start Sat 9/24 18:23
+    SK SK-PC SK-PC (v34) (matlab/27000 25805), start Tue 9/27 9:43
+    kamalsingh sibi /dev/pts/0 (v32) (matlab/27000 3712), start Tue 9/27 0:11
+    Inderpreet iitb-PC iitb-PC (v34) (matlab/27000 10721), start Tue 9/27 9:43
+    harsha harsha-S5520SC /dev/pts/11 (v34) (matlab/27000 16516), start Tue 9/27 10:22
+    Admin Admin-PC Admin-PC (v34) (matlab/27000 26332), start Wed 9/28 15:53
+    jerome table61 /dev/tty (v32) (matlab/27000 6117), start Wed 9/28 14:09
+    SPILAB_1 SPILAB_1-PC SPILAB_1-PC (v32) (matlab/27000 31002), start Thu 9/29 20:03
+    snehac radio3 /dev/pts/19 (v32) (matlab/27000 6639), start Wed 9/28 17:19
+    neha neha-desktop /dev/pts/20 (v34) (matlab/27000 27708), start Thu 9/29 11:34
+    User SiddharthSMP SiddharthSMP (v32) (matlab/27000 928), start Thu 9/29 15:40
+    jaipal abhijit /dev/pts/27 (v32) (matlab/27000 14933), start Fri 9/30 9:40
+    Subhendu Subhendu-PC Subhendu-PC (v33) (matlab/27000 47414), start Thu 10/6 15:20
+    rihab table60 /dev/pts/1 (v32) (matlab/27000 32222), start Sat 10/1 15:15
+    Unmesh GULAB_SINGH GULAB_SINGH (v34) (matlab/27000 12764), start Sun 10/2 12:39
+    ayush simulator-S2600CP /dev/pts/12 (v34) (matlab/27000 14455), start Sun 10/2
+17:50
+    chandradeep simulator-S2600CP /dev/pts/7 (v34) (matlab/27000 26425), start Sun
+10/2 17:53
+    varunmehta simulator /dev/pts/3 (v34) (matlab/27000 33725), start Mon 10/3 23:09
+    kuntal WIN-QNB0FS63QGE WIN-QNB0FS63QGE (v34) (matlab/27000 38811), start Mon
+10/3 0:47
+    gouranga npde-tca /dev/pts/4 (v34) (matlab/27000 51613), start Mon 10/3 8:43
+    Kamal Kamal-PC Kamal-PC (v34) (matlab/27000 221), start Mon 10/3 12:44
+    pkhandagale NCSERV103 NCVM201 (v32) (matlab/27000 3341), start Mon 10/3 12:27
+    sandesh mbelab /dev/pts/17 (v34) (matlab/27000 34910), start Mon 10/3 19:10
+    Ultimatespann varun varun (v32) (matlab/27000 5538), start Tue 10/4 13:00
+    Vivek Vivek-PC Vivek-PC (v34) (matlab/27000 28122), start Tue 10/4 14:52
+    Krishnendu Krishnendu-PC Krishnendu-PC (v34) (matlab/27000 39516), start Tue
+10/4 15:04
+    LCN4 LCN4-PC LCN4-PC (v32) (matlab/27000 2629), start Tue 10/4 17:52
+    Swasti_B Lcn3-PC Lcn3-PC (v32) (matlab/27000 1833), start Tue 10/4 18:43
+    root prandtl /dev/pts/18 (v34) (matlab/27000 13825), start Tue 10/4 20:24
+    sachine DESKTOP-6EVE1P9 DESKTOP-6EVE1P9 (v34) (matlab/27000 37111), start Tue
+10/4 21:34
+    skarmarkar profs-Mac-Pro (v34) (matlab/27000 14235), start Tue 10/4 23:34
+    Phani Phani-PC Phani-PC (v34) (matlab/27000 3259), start Wed 10/5 11:40
+    SPILAB2 SPILAB2-PC SPILAB2-PC (v32) (matlab/27000 46937), start Fri 10/7 12:38
+    153190010 tunga /dev/tty (v32) (matlab/27000 11053), start Wed 10/5 13:06
+    lab_03 localhost /dev/pts/0 (v34) (matlab/27000 20141), start Wed 10/5 13:06
+    AtulSr AtulSr-PC AtulSr-PC (v33) (matlab/27000 34721), start Wed 10/5 14:20
+    Mohit DESKTOP-DQPGHJJ DESKTOP-DQPGHJJ (v32) (matlab/27000 19555), start Wed 10/5
+16:36
+    shubhangi localhost.localdomain /dev/pts/0 (v32) (matlab/27000 31835), start Thu
+10/6 14:54
+    user admin admin (v34) (matlab/27000 10946), start Wed 10/5 23:57
+    prof.supreet admin DEBU-PC (v34) (matlab/27000 2064), start Thu 10/6 0:38
+    Dexter DESKTOP-88DPE6L DESKTOP-88DPE6L (v34) (matlab/27000 24945), start Thu
+10/6 4:46
+    raju graminvani /dev/pts/5 (v34) (matlab/27000 33326), start Thu 10/6 10:32
+    KKB KKB-PC KKB-PC (v34) (matlab/27000 20950), start Thu 10/6 11:09
+    Ashwini radio1 /dev/pts/11 (v32) (matlab/27000 5242), start Thu 10/6 11:09
+    pradeep partha /dev/pts/3 (v32) (matlab/27000 19647), start Thu 10/6 15:23
+    meenal meenal-desktop /dev/pts/26 (v32) (matlab/27000 48516), start Thu 10/6 15:49
+    Ranjith Chiplunkar RAVIGUDI RAVIGUDI (v32) (matlab/27000 6543), start Thu 10/6
+16:20
+    admin admin-PC admin-PC (v32) (matlab/27000 28348), start Thu 10/6 17:21
+    Prakash Prakash-PC Prakash-PC (v34) (matlab/27000 32128), start Thu 10/6 17:23
+    saurabh1 hemachandra /dev/pts/6 (v33) (matlab/27000 14851), start Thu 10/6 17:47
+    aditya aditya-desktop /dev/pts/1 (v32) (matlab/27000 26068), start Thu 10/6 18:14
+    jash jash-KVM-Desk-Net /dev/pts/1 (v34) (matlab/27000 26635), start Thu 10/6 20:08
+    Laxman vivek vivek (v34) (matlab/27000 26148), start Thu 10/6 20:28
+    ron ron-PC ron-PC (v34) (matlab/27000 7459), start Fri 10/7 10:03
+    Admin Tegegn-PC Tegegn-PC (v34) (matlab/27000 8939), start Thu 10/6 23:23
+    lsathishkumar kanjur /dev/pts/0 (v32) (matlab/27000 50938), start Thu 10/6 23:58
+    arjav amitabh /dev/tty (v32) (matlab/27000 27012), start Fri 10/7 1:39
+    safeer safeer-H97M-D3H /dev/tty (v34) (matlab/27000 45831), start Fri 10/7 2:40
+    himank himank-HP-ENVY-4-Notebook-PC /dev/pts/0 (v34) (matlab/27000 39415), start
+Fri 10/7 5:18
+    hemant hemant-HP-dx2480-MT-NS005PA /dev/pts/0 (v34) (matlab/27000 30653), start
+Fri 10/7 9:18
+    saurabh1 issac /dev/pts/4 (v34) (matlab/27000 9261), start Fri 10/7 9:32
+    saurabh1 ramanujan /dev/pts/7 (v34) (matlab/27000 21979), start Fri 10/7 9:34
+    saurabh1 cvraman /dev/pts/3 (v34) (matlab/27000 20736), start Fri 10/7 9:36
+    amitabhanandi Amitabhas-MacBook-Pro (v34) (matlab/27000 45910), start Fri 10/7
+10:20
+    User SHIVANG-IITB SHIVANG-IITB (v34) (matlab/27000 12961), start Fri 10/7 9:49
+    BHANU PRIYA Bhanupriya Bhanupriya (v34) (matlab/27000 9351), start Fri 10/7 11:59
+    Ammu Ammu Ammu (v34) (matlab/27000 49930), start Fri 10/7 9:53
+    User Shankar-PC Shankar-PC (v34) (matlab/27000 47715), start Fri 10/7 9:55
+    Civil-9 RajanB RajanB (v34) (matlab/27000 2262), start Fri 10/7 9:58
+    chirag chirag-Inspiron-N5110 /dev/pts/4 (v34) (matlab/27000 17037), start Fri
+10/7 10:08
+    Harindra Pradeep-PC Pradeep-PC (v34) (matlab/27000 10568), start Fri 10/7 10:12
+    sriram sriram-PC sriram-PC (v32) (matlab/27000 10445), start Fri 10/7 10:19
+    R.B.Sharmila RBSharmila RBSharmila (v34) (matlab/27000 19166), start Fri 10/7 10:27
+    piyush GeoModel GeoModel (v32) (matlab/27000 16470), start Fri 10/7 10:28
+    dnmanik dnmanik-pc dnmanik-pc (v32) (matlab/27000 13961), start Fri 10/7 10:30
+    NAG NAG-PC NAG-PC (v33) (matlab/27000 32831), start Fri 10/7 10:34
+    mishal linux /dev/pts/11 (v34) (matlab/27000 31154), start Fri 10/7 11:00
+    Nandish ComLab-PC ComLab-PC (v32) (matlab/27000 12583), start Fri 10/7 11:06
+    PROF GULAB SINGH DESKTOP-PN08HAS DESKTOP-PN08HAS (v34) (matlab/27000 860), start
+Fri 10/7 11:07
+    chotu chotu-PC chotu-PC (v34) (matlab/27000 49108), start Fri 10/7 12:00
+    mayur DESKTOP-DQSB0I7 DESKTOP-DQSB0I7 (v34) (matlab/27000 40922), start Fri 10/7
+11:16
+    Sathish Kumar SathishKumar-PC SathishKumar-PC (v34) (matlab/27000 34531), start
+Fri 10/7 11:38
+    rajeshbhatt kunal-Bhatts-MacBook-Pro (v34) (matlab/27000 31538), start Fri 10/7
+11:41
+    GK GK-PC GK-PC (v34) (matlab/27000 43922), start Fri 10/7 11:42
+    infonet infonet /dev/pts/15 (v34) (matlab/27000 21036), start Fri 10/7 11:52
+    parnashri coolceberus coolceberus (v34) (matlab/27000 44119), start Fri 10/7 11:52
+    ADMIN PRO_G_SINGH PRO_G_SINGH (v34) (matlab/27000 17914), start Fri 10/7 12:00
+    suresh suresh /dev/pts/0 (v33) (matlab/27000 17758), start Fri 10/7 12:01
+    abhi Abhisheks-MacBook-Pro (v34) (matlab/27000 42036), start Fri 10/7 12:01
+    Dell Dell-pc Dell-pc (v34) (matlab/27000 26265), start Fri 10/7 12:26
+    root one /dev/tty (v32) (matlab/27000 38131), start Fri 10/7 12:27
+    AAKASH DESKTOP-GVISOAS DESKTOP-GVISOAS (v34) (matlab/27000 6444), start Fri 10/7
+12:28
+    poweranserlabs PAL /dev/pts/9 (v32) (matlab/27000 40831), start Fri 10/7 12:28
+    Palka Palkas-MacBook-Air (v34) (matlab/27000 25348), start Fri 10/7 12:46
+    HP DESKTOP-ISF5RCQ DESKTOP-ISF5RCQ (v34) (matlab/27000 1915), start Fri 10/7 13:19
+    theDeepak Deepak Deepak (v34) (matlab/27000 28445), start Fri 10/7 12:58
+    chitaranjanph Chitaranjan Chitaranjan (v34) (matlab/27000 1796), start Fri 10/7
+12:58
+    nilesh home-pc home-pc (v34) (matlab/27000 3820), start Fri 10/7 13:00
+    prashant.gupta INA323RLDWL1397 INA323RLDWL1397 (v34) (matlab/27000 11687), start
+Fri 10/7 13:00
+    aditya hogwarts /dev/pts/2 (v34) (matlab/27000 1163), start Fri 10/7 13:11
+    Admin DESKTOP-SHTBSTL DESKTOP-SHTBSTL (v34) (matlab/27000 42538), start Fri 10/7
+13:30
+    office1 office1-PC office1-PC (v34) (matlab/27000 33649), start Fri 10/7 13:39
+    ysrao rinki rinki (v34) (matlab/27000 30833), start Fri 10/7 13:44
+    papiya PAL117 /dev/pts/0 (v32) (matlab/27000 25569), start Fri 10/7 13:53
+    pc1 pc1-PC pc1-PC (v34) (matlab/27000 41345), start Fri 10/7 14:00
+
+Users of SIMULINK:  (Total of 100 licenses issued;  Total of 10 licenses in use)
+
+  "SIMULINK" v34, vendor: MLM, expiry: 01-jan-0000
+  floating license
+
+    Inderpreet iitb-PC iitb-PC (v34) (matlab/27000 16712), start Tue 9/27 9:43
+    Subhendu Subhendu-PC Subhendu-PC (v33) (matlab/27000 17278), start Thu 10/6 15:20
+    kuntal WIN-QNB0FS63QGE WIN-QNB0FS63QGE (v34) (matlab/27000 11244), start Mon
+10/3 23:16
+    Phani Phani-PC Phani-PC (v34) (matlab/27000 9077), start Wed 10/5 11:40
+    Ammu Ammu Ammu (v34) (matlab/27000 10859), start Fri 10/7 9:55
+    hemant hemant-HP-dx2480-MT-NS005PA /dev/pts/0 (v34) (matlab/27000 179), start
+Fri 10/7 10:51
+    mishal linux /dev/pts/11 (v34) (matlab/27000 18176), start Fri 10/7 11:00
+    mayur DESKTOP-DQSB0I7 DESKTOP-DQSB0I7 (v34) (matlab/27000 17870), start Fri 10/7
+11:17
+    nilesh home-pc home-pc (v34) (matlab/27000 5633), start Fri 10/7 13:01
+    chitaranjanph Chitaranjan Chitaranjan (v34) (matlab/27000 42226), start Fri 10/7
+13:09
+
+Users of Aerospace_Blockset:  (Total of 2 licenses issued;  Total of 0 licenses in use)
+
+Users of Aerospace_Toolbox:  (Total of 2 licenses issued;  Total of 1 license in use)
+
+  "Aerospace_Toolbox" v34, vendor: MLM, expiry: 01-jan-0000
+  floating license
+
+    BHANU PRIYA Bhanupriya Bhanupriya (v34) (matlab/27000 22059), start Fri 10/7 11:59
+
+Users of Bioinformatics_Toolbox:  (Total of 3 licenses issued;  Total of 0 licenses
+in use)
+
+Users of Communication_Toolbox:  (Total of 10 licenses issued;  Total of 1 license
+in use)
+
+  "Communication_Toolbox" v34, vendor: MLM, expiry: 01-jan-0000
+  floating license
+
+    ron ron-PC ron-PC (v34) (matlab/27000 2326), start Fri 10/7 11:22
+
+Users of Video_and_Image_Blockset:  (Total of 5 licenses issued;  Total of 0
+licenses in use)
+
+Users of Control_Toolbox:  (Total of 50 licenses issued;  Total of 3 licenses in use)
+
+  "Control_Toolbox" v34, vendor: MLM, expiry: 01-jan-0000
+  floating license
+
+    Kamal Kamal-PC Kamal-PC (v34) (matlab/27000 4532), start Mon 10/3 12:44
+    KKB KKB-PC KKB-PC (v34) (matlab/27000 52014), start Fri 10/7 10:47
+    mishal linux /dev/pts/11 (v34) (matlab/27000 35132), start Fri 10/7 11:00
+
+Users of Curve_Fitting_Toolbox:  (Total of 10 licenses issued;  Total of 3 licenses
+in use)
+
+  "Curve_Fitting_Toolbox" v34, vendor: MLM, expiry: 01-jan-0000
+  floating license
+
+    Admin Admin-PC Admin-PC (v34) (matlab/27000 41722), start Tue 10/4 10:36
+    Kamal Kamal-PC Kamal-PC (v34) (matlab/27000 9962), start Wed 10/5 13:18
+    SPILAB2 SPILAB2-PC SPILAB2-PC (v34) (matlab/27000 6043), start Fri 10/7 13:07
+
+Users of Signal_Blocks:  (Total of 25 licenses issued;  Total of 5 licenses in use)
+
+  "Signal_Blocks" v34, vendor: MLM, expiry: 01-jan-0000
+  floating license
+
+    Subhendu Subhendu-PC Subhendu-PC (v33) (matlab/27000 45515), start Thu 10/6 15:20
+    kuntal WIN-QNB0FS63QGE WIN-QNB0FS63QGE (v34) (matlab/27000 46315), start Mon
+10/3 23:21
+    Phani Phani-PC Phani-PC (v34) (matlab/27000 50203), start Wed 10/5 11:40
+    hemant hemant-HP-dx2480-MT-NS005PA /dev/pts/0 (v34) (matlab/27000 43438), start
+Fri 10/7 10:53
+    ron ron-PC ron-PC (v34) (matlab/27000 4252), start Fri 10/7 11:22
+
+Users of Data_Acq_Toolbox:  (Total of 5 licenses issued;  Total of 0 licenses in use)
+
+Users of Database_Toolbox:  (Total of 2 licenses issued;  Total of 0 licenses in use)
+
+Users of RTW_Embedded_Coder:  (Total of 5 licenses issued;  Total of 0 licenses in use)
+
+Users of Filter_Design_HDL_Coder:  (Total of 2 licenses issued;  Total of 0 licenses
+in use)
+
+Users of Fixed_Point_Toolbox:  (Total of 2 licenses issued;  Total of 0 licenses in
+use)
+
+Users of Fuzzy_Toolbox:  (Total of 2 licenses issued;  Total of 0 licenses in use)
+
+Users of Dial_and_Gauge_Blocks:  (Total of 2 licenses issued;  Total of 0 licenses
+in use)
+
+Users of GADS_Toolbox:  (Total of 5 licenses issued;  Total of 1 license in use)
+
+  "GADS_Toolbox" v34, vendor: MLM, expiry: 01-jan-0000
+  floating license
+
+    root one /dev/tty (v32) (matlab/27000 19936), start Fri 10/7 12:27
+
+Users of Simulink_HDL_Coder:  (Total of 2 licenses issued;  Total of 0 licenses in use)
+
+Users of EDA_Simulator_Link:  (Total of 2 licenses issued;  Total of 0 licenses in use)
+
+Users of Image_Acquisition_Toolbox:  (Total of 10 licenses issued;  Total of 0
+licenses in use)
+
+Users of Image_Toolbox:  (Total of 50 licenses issued;  Total of 9 licenses in use)
+
+  "Image_Toolbox" v34, vendor: MLM, expiry: 01-jan-0000
+  floating license
+
+    SPILAB_1 SPILAB_1-PC SPILAB_1-PC (v32) (matlab/27000 31618), start Sat 10/1 19:10
+    ayush simulator-S2600CP /dev/pts/12 (v34) (matlab/27000 36518), start Sun 10/2
+17:50
+    saurabh1 hemachandra /dev/pts/6 (v33) (matlab/27000 51936), start Thu 10/6 21:24
+    Laxman vivek vivek (v34) (matlab/27000 8562), start Thu 10/6 20:29
+    saurabh1 cvraman /dev/pts/3 (v34) (matlab/27000 46719), start Fri 10/7 10:47
+    saurabh1 ramanujan /dev/pts/7 (v34) (matlab/27000 49013), start Fri 10/7 11:05
+    saurabh1 issac /dev/pts/4 (v34) (matlab/27000 42625), start Fri 10/7 11:12
+    theDeepak Deepak Deepak (v34) (matlab/27000 48921), start Fri 10/7 12:58
+    aditya hogwarts /dev/pts/2 (v34) (matlab/27000 15027), start Fri 10/7 13:12
+
+Users of Instr_Control_Toolbox:  (Total of 2 licenses issued;  Total of 1 license in
+use)
+
+  "Instr_Control_Toolbox" v34, vendor: MLM, expiry: 01-jan-0000
+  floating license
+
+    GK GK-PC GK-PC (v34) (matlab/27000 35245), start Fri 10/7 12:02
+
+Users of MATLAB_Coder:  (Total of 5 licenses issued;  Total of 0 licenses in use)
+
+Users of MATLAB_Builder_for_Java:  (Total of 10 licenses issued;  Total of 0
+licenses in use)
+
+Users of Compiler:  (Total of 10 licenses issued;  Total of 0 licenses in use)
+
+Users of MATLAB_Report_Gen:  (Total of 5 licenses issued;  Total of 0 licenses in use)
+
+Users of MAP_Toolbox:  (Total of 2 licenses issued;  Total of 2 licenses in use)
+
+  "MAP_Toolbox" v34, vendor: MLM, expiry: 01-jan-0000
+  floating license
+
+    SK SK-PC SK-PC (v34) (matlab/27000 11121), start Tue 9/27 9:43
+    rihab table60 /dev/pts/1 (v32) (matlab/27000 32719), start Sat 10/1 15:21
+
+Users of MPC_Toolbox:  (Total of 5 licenses issued;  Total of 0 licenses in use)
+
+Users of MBC_Toolbox:  (Total of 5 licenses issued;  Total of 0 licenses in use)
+
+Users of Neural_Network_Toolbox:  (Total of 5 licenses issued;  Total of 0 licenses
+in use)
+
+Users of OPC_Toolbox:  (Total of 2 licenses issued;  Total of 0 licenses in use)
+
+Users of Optimization_Toolbox:  (Total of 50 licenses issued;  Total of 4 licenses
+in use)
+
+  "Optimization_Toolbox" v34, vendor: MLM, expiry: 01-jan-0000
+  floating license
+
+    Ashwini radio1 /dev/pts/11 (v32) (matlab/27000 7328), start Thu 10/6 17:07
+    lsathishkumar kanjur /dev/pts/0 (v32) (matlab/27000 6942), start Fri 10/7 0:01
+    BHANU PRIYA Bhanupriya Bhanupriya (v34) (matlab/27000 37218), start Fri 10/7 11:59
+    Palka Palkas-MacBook-Air (v34) (matlab/27000 2536), start Fri 10/7 12:46
+
+Users of Distrib_Computing_Toolbox:  (Total of 5 licenses issued;  Total of 4
+licenses in use)
+
+  "Distrib_Computing_Toolbox" v34, vendor: MLM, expiry: 01-jan-0000
+  floating license
+
+    bmlabadmin bmlabadmin /dev/pts/6 (v34) (matlab/27000 10104), start Sat 9/24 18:24
+    rihab table60 /dev/pts/1 (v32) (matlab/27000 36108), start Sat 10/1 15:21
+    Dexter DESKTOP-88DPE6L DESKTOP-88DPE6L (v34) (matlab/27000 19323), start Thu
+10/6 4:50
+    raju graminvani /dev/pts/5 (v34) (matlab/27000 558), start Thu 10/6 10:34
+
+Users of PDE_Toolbox:  (Total of 50 licenses issued;  Total of 0 licenses in use)
+
+Users of Phased_Array_System_Toolbox:  (Total of 2 licenses issued;  Total of 0
+licenses in use)
+
+Users of RF_Toolbox:  (Total of 5 licenses issued;  Total of 1 license in use)
+
+  "RF_Toolbox" v34, vendor: MLM, expiry: 01-jan-0000
+  floating license
+
+    Subhendu Subhendu-PC Subhendu-PC (v33) (matlab/27000 4183), start Thu 10/6 17:09
+
+Users of Robust_Toolbox:  (Total of 5 licenses issued;  Total of 0 licenses in use)
+
+Users of Signal_Toolbox:  (Total of 50 licenses issued;  Total of 5 licenses in use)
+
+  "Signal_Toolbox" v34, vendor: MLM, expiry: 01-jan-0000
+  floating license
+
+    SPILAB_1 SPILAB_1-PC SPILAB_1-PC (v32) (matlab/27000 31319), start Sat 10/1 18:51
+    Kamal Kamal-PC Kamal-PC (v34) (matlab/27000 51119), start Tue 10/4 10:50
+    hemant hemant-HP-dx2480-MT-NS005PA /dev/pts/0 (v34) (matlab/27000 37742), start
+Fri 10/7 9:26
+    Admin Tegegn-PC Tegegn-PC (v34) (matlab/27000 21428), start Fri 10/7 12:54
+    SPILAB2 SPILAB2-PC SPILAB2-PC (v34) (matlab/27000 17340), start Fri 10/7 13:07
+
+Users of SimBiology:  (Total of 3 licenses issued;  Total of 0 licenses in use)
+
+Users of SimDriveline:  (Total of 5 licenses issued;  Total of 0 licenses in use)
+
+Users of SimElectronics:  (Total of 5 licenses issued;  Total of 0 licenses in use)
+
+Users of SimEvents:  (Total of 2 licenses issued;  Total of 0 licenses in use)
+
+Users of SimHydraulics:  (Total of 5 licenses issued;  Total of 0 licenses in use)
+
+Users of SimMechanics:  (Total of 5 licenses issued;  Total of 0 licenses in use)
+
+Users of Power_System_Blocks:  (Total of 5 licenses issued;  Total of 2 licenses in
+use)
+
+  "Power_System_Blocks" v34, vendor: MLM, expiry: 01-jan-0000
+  floating license
+
+    Subhendu Subhendu-PC Subhendu-PC (v33) (matlab/27000 8334), start Thu 10/6 15:20
+    Phani Phani-PC Phani-PC (v34) (matlab/27000 47103), start Wed 10/5 11:40
+
+Users of RF_Blockset:  (Total of 5 licenses issued;  Total of 1 license in use)
+
+  "RF_Blockset" v34, vendor: MLM, expiry: 01-jan-0000
+  floating license
+
+    Subhendu Subhendu-PC Subhendu-PC (v33) (matlab/27000 5151), start Thu 10/6 17:09
+
+Users of Simscape:  (Total of 25 licenses issued;  Total of 4 licenses in use)
+
+  "Simscape" v34, vendor: MLM, expiry: 01-jan-0000
+  floating license
+
+    Subhendu Subhendu-PC Subhendu-PC (v33) (matlab/27000 8736), start Thu 10/6 15:20
+    Phani Phani-PC Phani-PC (v34) (matlab/27000 2149), start Wed 10/5 11:40
+    mayur DESKTOP-DQSB0I7 DESKTOP-DQSB0I7 (v34) (matlab/27000 12158), start Fri 10/7
+11:19
+    chitaranjanph Chitaranjan Chitaranjan (v34) (matlab/27000 43529), start Fri 10/7
+13:09
+
+Users of Real-Time_Workshop:  (Total of 5 licenses issued;  Total of 0 licenses in use)
+
+Users of Simulink_Control_Design:  (Total of 5 licenses issued;  Total of 0 licenses
+in use)
+
+Users of Simulink_Design_Optim:  (Total of 5 licenses issued;  Total of 0 licenses
+in use)
+
+Users of Real-Time_Win_Target:  (Total of 2 licenses issued;  Total of 0 licenses in
+use)
+
+Users of Simulink_PLC_Coder:  (Total of 2 licenses issued;  Total of 0 licenses in use)
+
+Users of XPC_Target:  (Total of 2 licenses issued;  Total of 0 licenses in use)
+
+Users of SIMULINK_Report_Gen:  (Total of 5 licenses issued;  Total of 0 licenses in
+use)
+
+Users of Stateflow:  (Total of 2 licenses issued;  Total of 0 licenses in use)
+
+Users of Statistics_Toolbox:  (Total of 25 licenses issued;  Total of 15 licenses in
+use)
+
+  "Statistics_Toolbox" v34, vendor: MLM, expiry: 01-jan-0000
+  floating license
+
+    SK SK-PC SK-PC (v34) (matlab/27000 2418), start Tue 9/27 9:43
+    harsha harsha-S5520SC /dev/pts/11 (v34) (matlab/27000 12619), start Tue 9/27 10:22
+    ayush simulator-S2600CP /dev/pts/12 (v34) (matlab/27000 1536), start Sun 10/2 17:50
+    varunmehta simulator /dev/pts/3 (v34) (matlab/27000 24143), start Mon 10/3 23:10
+    SPILAB_1 SPILAB_1-PC SPILAB_1-PC (v32) (matlab/27000 14319), start Tue 10/4 14:39
+    153190010 tunga /dev/tty (v32) (matlab/27000 52124), start Wed 10/5 13:06
+    raju graminvani /dev/pts/5 (v34) (matlab/27000 5032), start Thu 10/6 10:35
+    admin admin-PC admin-PC (v32) (matlab/27000 15269), start Thu 10/6 17:27
+    jash jash-KVM-Desk-Net /dev/pts/0 (v34) (matlab/27000 13667), start Thu 10/6 20:09
+    lsathishkumar kanjur /dev/pts/0 (v32) (matlab/27000 51326), start Fri 10/7 0:01
+    arjav amitabh /dev/tty (v32) (matlab/27000 36445), start Fri 10/7 1:39
+    Dexter DESKTOP-88DPE6L DESKTOP-88DPE6L (v34) (matlab/27000 35526), start Fri
+10/7 2:47
+    safeer safeer-H97M-D3H /dev/tty (v34) (matlab/27000 40710), start Fri 10/7 3:20
+    theDeepak Deepak Deepak (v34) (matlab/27000 7838), start Fri 10/7 12:58
+    ysrao rinki rinki (v34) (matlab/27000 33841), start Fri 10/7 13:59
+
+Users of Symbolic_Toolbox:  (Total of 50 licenses issued;  Total of 10 licenses in use)
+
+  "Symbolic_Toolbox" v34, vendor: MLM, expiry: 01-jan-0000
+  floating license
+
+    pkhandagale NCSERV103 NCVM201 (v32) (matlab/27000 18851), start Mon 10/3 13:27
+    bmlabadmin bmlabadmin /dev/pts/7 (v34) (matlab/27000 9440), start Mon 10/3 16:51
+    LCN4 LCN4-PC LCN4-PC (v32) (matlab/27000 46433), start Wed 10/5 16:01
+    Kamal Kamal-PC Kamal-PC (v34) (matlab/27000 25721), start Thu 10/6 10:33
+    BHANU PRIYA Bhanupriya Bhanupriya (v34) (matlab/27000 33131), start Fri 10/7 11:59
+    rajeshbhatt kunal-Bhatts-MacBook-Pro (v34) (matlab/27000 22406), start Fri 10/7
+11:50
+    abhi Abhisheks-MacBook-Pro (v34) (matlab/27000 46620), start Fri 10/7 12:08
+    chotu chotu-PC chotu-PC (v34) (matlab/27000 19836), start Fri 10/7 13:18
+    KKB KKB-PC KKB-PC (v34) (matlab/27000 27948), start Fri 10/7 13:19
+    Admin DESKTOP-SHTBSTL DESKTOP-SHTBSTL (v34) (matlab/27000 28057), start Fri 10/7
+13:30
+
+Users of Identification_Toolbox:  (Total of 10 licenses issued;  Total of 0 licenses
+in use)
+
+Users of Vehicle_Network_Toolbox:  (Total of 2 licenses issued;  Total of 0 licenses
+in use)
+
+Users of Wavelet_Toolbox:  (Total of 10 licenses issued;  Total of 4 licenses in use)
+
+  "Wavelet_Toolbox" v34, vendor: MLM, expiry: 01-jan-0000
+  floating license
+
+    saurabh1 hemachandra /dev/pts/6 (v33) (matlab/27000 42943), start Thu 10/6 17:47
+    saurabh1 issac /dev/pts/4 (v34) (matlab/27000 16933), start Fri 10/7 9:32
+    saurabh1 ramanujan /dev/pts/7 (v34) (matlab/27000 8269), start Fri 10/7 9:34
+    saurabh1 cvraman /dev/pts/3 (v34) (matlab/27000 28536), start Fri 10/7 9:36
+
+Users of MATLAB_Distrib_Comp_Engine:  (Total of 64 licenses issued;  Total of 0
+licenses in use)
+
+
+------------------------------------------------------------------

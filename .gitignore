@@ -63,6 +63,4 @@ celerybeat-schedule
 venv/
 ENV/
 
-# Data Files
-data/
 output.txt
