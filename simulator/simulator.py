@@ -99,7 +99,8 @@ class User():
         sub_time = randint(60, 3600)
         login_time = time - timedelta(seconds=sub_time)
         self.portal_id = str(int(mktime(login_time.timetuple())))
-        with open('simulator/output/matlab_DB_active.csv', 'a') as portal_active_log:
+        with open('simulator/output/matlab_DB_active.csv', 'a') as \
+                portal_active_log:
             portal_active_log.write('"' + self.uid + '","' + self.ip +
                                     '","' + date + '","' + self.portal_id +
                                     '"\n')
@@ -116,7 +117,8 @@ class User():
                 if self.portal_id in line:
                     login_entry = line.replace('\n', '')
                     line = ''
-        with open('simulator/output/matlab_DB_archive.csv', 'a') as portal_archive_log:
+        with open('simulator/output/matlab_DB_archive.csv', 'a') as \
+                portal_archive_log:
             portal_archive_log.write(login_entry + '","' + date + '", "' +
                                      logout_id + '"\n')
 
@@ -174,6 +176,7 @@ def simulate():
         User.check_expired()
         delay = uniform(1.0, 10.0)
         sleep(delay)
+
 
 if __name__ == '__main__':
     simulate()
