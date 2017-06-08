@@ -10,7 +10,7 @@ class Command(BaseCommand):
         self.stdout.write("Please Wait")
         active_csv = 'data/matlab_DB_active.csv'
         archive_csv = 'data/matlab_DB_archive.csv'
-        matlab_log = 'data/LM_TMW.log'
+        matlab_log = 'data/LM_TMW'
         port_activity_log = 'data/src_ip_log'
         process(active_csv, archive_csv, matlab_log, port_activity_log)
         self.stdout.write("Done Updating Entries")
